@@ -1,0 +1,11 @@
+ATT_augmented/
+LAT/
+AAT/
+data/
+models/
+experiments/
+fashion_dataset/
+*.pth
+.idea/
+.DS_Store
+.ipynb_checkpoints/
