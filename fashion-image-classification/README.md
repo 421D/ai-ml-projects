@@ -2,8 +2,6 @@
 
 Classifies product photos into four categories (Accessories, Bags, Clothing, Shoes) with four ImageNet-pretrained CNNs, then tests how well each one holds up when Gaussian noise is added to the images.
 
-**My role:** group project. I trained and evaluated all four models and ran the noise-robustness tests; a teammate prepared the balanced dataset.
-
 ## Results
 
 Accuracy on 500 images (125 per class), from the run saved in [`notebook.ipynb`](notebook.ipynb). In the noisy run, Gaussian noise is added to a random half of the images.
