@@ -12,7 +12,7 @@ Classifies aerial landscape images into **15 categories** (airport, beach, city,
 | **EfficientNet-B0** | **97.99%** | **98.01%** | **97.99%** | **97.98%** |
 
 - EfficientNet-B0 beat ResNet-18 on every fold with less than half the parameters (5.3M vs 11.7M).
-- Both models reach above 96% with only 10 epochs per fold, helped by ImageNet pretraining and augmentation.
+- Both models reach above 96% with only 10 epochs per fold, helped by ImageNet pretraining.
 
 <img src="results/efficientnet_confusion_matrix.png" width="420"> <img src="results/fold_accuracy_plot.png" width="420">
 
@@ -23,7 +23,6 @@ Classifies aerial landscape images into **15 categories** (airport, beach, city,
 **Models.**
 - ResNet-18 and EfficientNet-B0, ImageNet-pretrained, fine-tuned end to end.
 - 224×224 input, Adam (lr 1e-4), batch size 32, 10 epochs per fold.
-- Augmentation: horizontal flip, ±15° rotation, colour jitter, random resized crop.
 
 ## Stack
 
